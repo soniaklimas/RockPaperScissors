@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <title>Rock paper scizors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="select">
+      <i data-option="paper" class="far fa-hand-paper"></i>
+      <i data-option="rock" class="far fa-hand-rock"></i>
+      <i data-option="scisors" class="far fa-hand-scissors"></i>
+    </div>
+
+    <button class="start">Let's play</button>
+
+    <div class="results">
+      <div class="choices">
+        <p>User: <span data-summary="user-choice"></span></p>
+        <p>Computer: <span data-summary="ai-choice"></span></p>
+      </div>
+
+      <div class="result"><span data-summary="who-won"></span></div>
+
+      <div class="scores">
+        <p class="number">Number of games: <span>0</span></p>
+        <p class="wins">Wins: <span>0</span></p>
+        <p class="losses">Losses: <span>0</span></p>
+        <p class="draws">Draws: <span>0</span></p>
+      </div>
+    </div>
+    <button class="reset">Reset</button>
+
+    <script src="game.js"></script>
+  </body>
+</html>
